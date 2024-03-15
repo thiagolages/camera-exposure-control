@@ -4,23 +4,26 @@ Exposure Control of e-con Systems' 24CUG camera model. Can be used for other mod
 
 # Commands
 
-```json
+
 |                 | 	Command     | 		Options                  |
 |:---------------:|:---------------:|:------------------------------:|
 | Exposure Control| 	0           | 	0(Unlock) or 1(Lock)         |
 | Set ROI (x,y)   | 	1           | 	X,Y coordinates              |
 | Set ROI Mode    | 	2           | 	1(Full-Auto) or 2(Manual)    |
-```
 
+exposureCommandMap = 
 ```json
-exposureCommandMap = {
+{
     "exposureControl"   : 0,
     "roi"               : 1,
     "roiMode"           : 2
 },
-roiModeOptionMap = {
+```
+roiModeOptionMap = 
+```json
+{
     "auto"      : 1,
-    "full"      : 1, // same as 'auto'
+    "full"      : 1,
     "manual"    : 2
 }
 ```
